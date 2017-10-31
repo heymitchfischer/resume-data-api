@@ -1,2 +1,2 @@
-class CapstonesController < ApplicationController
+class Api::V1::CapstonesController < ApplicationController
 end
