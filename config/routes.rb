@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   namespace :api do
-    namespace :v1
+    namespace :v1 do
       get '/students' => 'students#index'
       post '/students' => 'students#create'
       get '/students/:id' => 'students#show'
@@ -33,5 +33,4 @@ Rails.application.routes.draw do
       delete '/skills/:id' => 'skills#destroy'
     end
   end
-  
 end
