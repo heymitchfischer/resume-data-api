@@ -15,7 +15,7 @@ class Api::V1::CapstonesController < ApplicationController
   end
 
   def show
-    @capstone = Capstone.where(student_id: params[:student_id])
+    @capstone = Capstone.find(params[:id])
   end
 
   def update

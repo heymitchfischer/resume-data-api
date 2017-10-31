@@ -1,10 +1,10 @@
 class Api::V1::EducationsController < ApplicationController
   def index
-    @educations = Educations.all
+    @educations = Education.all
   end
 
   def create
-    @education = Educations.create(
+    @education = Education.create(
                                    start_date: params[:start_date],
                                    end_date: params[:end_date],
                                    degree: params[:degree],
@@ -15,11 +15,11 @@ class Api::V1::EducationsController < ApplicationController
   end
 
   def show
-    @education = Educations.find(params[:id])
+    @education = Education.find(params[:id])
   end
 
   def update
-    @education = Educations.find(params[:id])
+    @education = Education.find(params[:id])
     @education.update(
                       start_date: params[:start_date],
                       end_date: params[:end_date],
@@ -30,7 +30,7 @@ class Api::V1::EducationsController < ApplicationController
   end
 
   def destroy
-    @education = Educations.find(params[:id])
+    @education = Education.find(params[:id])
     @education.destroy
   end
 end
