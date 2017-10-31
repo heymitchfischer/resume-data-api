@@ -5,7 +5,7 @@ class Api::V1::SkillsController < ApplicationController
 
   def create
     @skill = Skill.create(student_id: params[:student_id],
-                         skill: params[:skill])
+                         skill_name: params[:skill_name])
   end
 
   def show
@@ -14,7 +14,7 @@ class Api::V1::SkillsController < ApplicationController
 
   def update
     @skill = Skill.find(params[:id])
-    @skill = Skill.update(skill: params[:skill])
+    @skill = Skill.update(skill_name: params[:skill_name])
   end
 
   def destroy
