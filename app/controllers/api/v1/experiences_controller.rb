@@ -16,7 +16,7 @@ class Api::V1::ExperiencesController < ApplicationController
   end
 
   def show
-    @experiences = Experience.where(student_id: params[:student_id])
+    @experience = Experience.where(student_id: params[:student_id])
   end
 
   def update
