@@ -33,5 +33,4 @@ Rails.application.routes.draw do
       delete '/skills/:id' => 'skills#destroy'
     end
   end
-  
 end
