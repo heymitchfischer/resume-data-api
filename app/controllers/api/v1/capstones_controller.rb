@@ -1,4 +1,4 @@
-class Api::CapstonesController < ApplicationController
+class Api::V1::CapstonesController < ApplicationController
   def index
     @capstones = Capstone.all
   end
