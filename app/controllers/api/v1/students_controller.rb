@@ -23,6 +23,10 @@ class Api::V1::StudentsController < ApplicationController
 
   def show
     @student = Student.find(params[:id])
+    render :show
+    # render json: @student.as_json({
+    #     include: [:skills, :experiences]
+    #   })
   end
 
   def update
