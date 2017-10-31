@@ -1,2 +1,2 @@
-class EducationsController < ApplicationController
+class Api::EducationsController < ApplicationController
 end

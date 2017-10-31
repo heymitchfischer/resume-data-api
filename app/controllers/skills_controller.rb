@@ -1,2 +1,2 @@
-class SkillsController < ApplicationController
+class Api::SkillsController < ApplicationController
 end

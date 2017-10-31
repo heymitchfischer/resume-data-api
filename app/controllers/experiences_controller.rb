@@ -1,2 +1,2 @@
-class ExperiencesController < ApplicationController
+class Api::ExperiencesController < ApplicationController
 end
