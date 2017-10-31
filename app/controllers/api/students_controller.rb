@@ -1,5 +1,4 @@
 class Api::StudentsController < ApplicationController
-
   def index
     @students = Student.all
   end
