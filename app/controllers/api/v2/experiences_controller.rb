@@ -23,7 +23,7 @@ class Api::V2::ExperiencesController < ApplicationController
 
   def update
     experience = Experience.find(params[:id])
-    experience = Experience.update(
+    experience.update(
                                     start_date: params[:start_date],
                                     end_date: params[:end_date],
                                     job_title: params[:job_title],

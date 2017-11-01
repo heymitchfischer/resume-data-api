@@ -22,7 +22,7 @@ class Api::V2::CapstonesController < ApplicationController
 
   def update
     capstone = Capstone.find(params[:id])
-    capstone = Capstone.update(
+    capstone.update(
                                     name: params[:name],
                                     description: params[:description],
                                     url: params[:url],

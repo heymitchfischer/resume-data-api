@@ -14,7 +14,7 @@ class Api::V1::SkillsController < ApplicationController
 
   def update
     @skill = Skill.find(params[:id])
-    @skill = Skill.update(skill_name: params[:skill_name])
+    @skill.update(skill_name: params[:skill_name])
   end
 
   def destroy
