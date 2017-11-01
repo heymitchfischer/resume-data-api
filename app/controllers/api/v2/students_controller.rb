@@ -1,4 +1,6 @@
 class Api::V2::StudentsController < ApplicationController
+    before_action :restrict_access
+    
   def index
     @students = Student.all
   end

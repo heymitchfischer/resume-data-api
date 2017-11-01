@@ -1,3 +1,5 @@
+json.student_first_name @capstone.student.first_name
+json.student_last_name @capstone.student.last_name
 json.id @capstone.id
 json.name @capstone.name
 json.description @capstone.description

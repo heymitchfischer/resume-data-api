@@ -1,3 +1,5 @@
+json.student_first_name @experience.student.first_name
+json.student_last_name @experience.student.last_name
 json.id @experience.id
 json.start_date @experience.start_date
 json.end_date @experience.end_date
