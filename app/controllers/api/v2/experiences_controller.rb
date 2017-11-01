@@ -1,4 +1,6 @@
 class Api::V2::ExperiencesController < ApplicationController
+    before_action :restrict_access
+    
   def index
     @experiences = Experience.all
   end

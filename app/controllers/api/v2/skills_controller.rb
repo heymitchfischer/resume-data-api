@@ -1,4 +1,6 @@
 class Api::V2::SkillsController < ApplicationController
+    before_action :restrict_access
+    
   def index
     @skills = Skill.all
   end
