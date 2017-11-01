@@ -31,7 +31,7 @@ class Api::V1::StudentsController < ApplicationController
 
   def update
     @student = Student.find(params[:id])
-    @student.assign_attribute(
+    @student.assign_attributes(
                               first_name: params[:first_name],
                               last_name: params[:last_name],
                               email: params[:email],
